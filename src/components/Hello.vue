@@ -1,33 +1,51 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://gitter.im/vuejs/vue" target="_blank">Gitter Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-      <br>
-      <li><a href="http://vuejs-templates.github.io/webpack/" target="_blank">Docs for This Template</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
+    <!-- First Container -->
+    <div class="container-fluid bg-1 text-center">
+      <h3 class="margin">Who Am I?</h3>
+      <img src="bird.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+      <h3>I'm an adventurer</h3>
+    </div>
+
+    <!-- Second Container -->
+    <div class="container-fluid bg-2 text-center">
+      <h3 class="margin">What Am I?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+      <a href="#" class="btn btn-default btn-lg">
+        <span class="glyphicon glyphicon-search"></span> Search
+      </a>
+    </div>
+
+    <!-- Third Container (Grid) -->
+    <div class="container-fluid bg-3 text-center">    
+      <h3 class="margin">Where To Find Me?</h3><br>
+      <div class="row">
+        <div class="col-sm-4">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-4"> 
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-4"> 
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-4 text-center">
+      <p>copyright@2017</a></p> 
+    </footer>
+
   </div>
 </template>
 
 <script>
 export default {
-  name: 'hello',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
-  }
+  name: 'hello'
 }
 </script>
 
